@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+	font-size:20px;
+    background-color: rgb(248, 242, 222);
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* main css */
+
+main {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.admin-panel,.Account-Details{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+table th{
+    background-color: rgb(232, 232, 123);
+}
+
+table td {
+    background-color: rgb(234, 234, 193);
+}
+
+.manage-user {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.manage-user div {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    background-color: rgb(234, 234, 193);
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"],textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+textarea{
+    height: fit-content;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: rgb(43, 97, 212);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#userStatus, #bookingStatus{
+    font-weight: bold;
+}
+
+select {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px;
+}

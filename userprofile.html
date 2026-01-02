@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Vibration-User profile</title>
+    <link rel="stylesheet" href="style/userprofilecss.css">	
+	<?php
+		include_once('config.php');
+	?>
+</head>
+
+<body>
+
+	<?php
+		include_once('header.php');
+	?>
+    <!--<header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-info">
+            <a href="#"><img src="images/u.jpeg">Hello! Username</a>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>-->
+
+    <main>
+        <section class="user-profile">            
+		<div class="user_container">
+			<div class="user_center">
+				<h1>User Profile</h1>
+				<form method="POST" action="">
+					<div class="user-image">
+                    <img src="images/u.jpeg" alt="User Image">
+					</div>
+					<button class = "user_btn">Edit Profile Picture</button><br>
+					<button class = "user_btn">My Booking</button><br>
+					<button class = "user_btn">Delete Account</button>
+				</form>
+			</div>
+		</div>	
+		<div class="acc_container">
+			<div class="acc_center">
+				<h1>Account Details</h1>
+				<form method="POST" action="">
+					<div class="txt_field">
+					<label>First Name</label>
+						<input type="text" name="f_name" placeholder="First Name" required>
+					</div>
+					<div class="txt_field">
+						<label>Last Name</label>
+						<input type="text" name="l_name" placeholder="Last Name" required>						
+					</div>
+					<div class="txt_field">
+						<label>Conatct Number</label>
+						<input type="tel" name="p_no1" pattern = "[0-9]{10}" placeholder="0123456789" required>						
+					</div>
+					<div class="txt_field">
+						<label>Conatct Number(Optional)</label>
+						<input type="tel" name="p_no2" pattern = "[0-9]{10}" placeholder = "(Optional)">						
+					</div>
+					<div class="txt_field">
+						<label>Address</label>
+						<input type="text" name="address" placeholder="Address" required>						
+					</div>
+					<div class="txt_field">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="example@gmail.com" required>						
+					</div>
+					<button name="update" type="Submit" class = "update_btn">Update</button>
+				</form>
+			</div>
+		</div>
+		<div class="pw_container">
+			<div class="pw_center">
+				<h1>Update Password</h1>
+				<form method="POST" action="">
+					<div class="txt_field">
+						<label>Old Password</label>
+						<input type="password" name="opassword" placeholder="old password" required>						
+					</div>
+					<div class="txt_field">
+						<label>New Password</label>
+						<input type="password" name="npassword" placeholder="new password" required>						
+					</div>
+					<div class="txt_field">
+						<label>Confirm Password</label>
+						<input type="password" name="cpassword" placeholder="confirm password" required>						
+					</div>						
+					<button name="save" type="Submit" class = "save_btn">Save</button>
+				</form>
+			</div>
+		</div>
+        </section>
+    </main>
+
+	<?php
+		include_once('footer.php');
+	?>
+	
+	<!--<footer>
+        <div class="content">
+            <!- Left column: Company logo and description ->
+            <div class="company-info">
+                <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                <p>Welcome to Hotel Vibration! Experience luxury stays and unforgettable events with us.</p>
+            </div>
+            <!- Center column: Quick links and social media ->
+           <div class="links-social">
+				<div class="quick-links">
+					<h4>Quick links</h4>
+					<p><a href="#">Home</a></p>
+					<p><a href="#">Events</a></p>
+					<p><a href="#">About</a></p>
+					<p><a href="#">Contact</a></p>
+				</div>
+				<div class="social-media">
+					<h4>Follow Us On</h4>
+					<a href = "https://www.facebook.com/"><img src = "images/fb.png"></a>
+					<a href = "https://web.whatsapp.com/"><img src = "images/wp.png"></a>
+					<a href = "https://www.instagram.com/"><img src = "images/ins.png"></a>
+					<a href = "https://x.com/"><img src = "images/tx.png"></a>
+					<a href = "https://www.youtube.com/"><img src = "images/yt.png"></a>
+				</div>
+			</div>
+            <!- Right column: Subscribe section ->
+            <div class="subscribe-section">
+                <h4>Get the latest news </h4>
+                <form id="subscribeForm">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+			 
+        </div>
+		
+				<div class="footer-links">
+                <a href="#">Terms and Conditions</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Cookies Policy</a>
+                </div>
+		<hr>
+           Copyright © 2024 Hotel Vibration. All rights reserved
+				
+    </footer>-->
+    
+
+    <script src="js/userprofilejs.js"></script>
+</body>
+</html>

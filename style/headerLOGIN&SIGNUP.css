@@ -1,0 +1,49 @@
+/*header css */
+
+header {
+	font-size:20px;
+    background-color: #d3ca96;
+    padding: 0.5%;
+    border-top: 2px solid #673b09;
+    border-bottom: 2px solid #673b09;
+    background-image : url("../images/header_img.png");
+	background-repeat : no-repeat;
+	background-size : cover;
+    color: white;
+}
+
+.logo img {
+	height:60px;
+    width: 180px;
+    float: left;
+
+}
+
+nav{
+    height: 70px;
+    width: fit-content;
+	margin-left:5%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav a:hover{
+	color: #ad8b3a;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+	padding: 10px 20px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ad8b3a;
+}

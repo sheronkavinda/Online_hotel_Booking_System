@@ -1,0 +1,92 @@
+/* Payment Form Section */
+.payment-form {
+    padding: 80px;
+    text-align: left;
+}
+
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border: 4px solid #D4AF37; 
+    padding: 20px;
+    background-color: #fff;
+}
+
+.left-payment {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.left-payment label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-logos {
+    display: flex;
+    justify-content: center; /* Centers logos horizontally */
+    align-items: center;     /* Aligns logos vertically*/
+    gap: 10px; /* Adds space between the logos */
+    margin-top: 5px; /* Add space from the content above */
+}
+
+/* Styling the images */
+.card-logos img {
+    width: 50px; /* Adjust the size of the logos */
+    height: auto;
+}
+
+.left-payment input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-cvv div {
+    width: 48%;
+}
+
+.right-payment {
+    width: 30%;
+    text-align: center;
+}
+
+.right-payment p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.right-payment h2 {
+    font-size: 36px;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.pay-btn {
+    background-color: #D4AF37;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-btn {
+    margin-top: 20px;
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}

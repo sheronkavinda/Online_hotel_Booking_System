@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Vibration-Home Page</title>
+    <link rel="stylesheet" href="style/homepage.css">
+	
+</head>
+
+<body>
+	<section>
+        <div class="log-main"></div>
+		<h3>Experience the Vibration of Elegance</h3>
+	</section>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="profile-info">
+            <a href="#"><img src="images/u.jpeg" alt="User Image">Hello! Username</a>
+            <button id="loginBtn">Login</button>
+        </div>
+    </header>
+	<div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1/3</div>
+            <img src="images/img1.jpg">
+            <!--<div class="text">1st image</div>-->
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2/3</div>
+            <img src="images/img2.jpg">
+            <!--<div class="text">2nd image</div>-->
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/3</div>
+            <img src="images/img3.jpg">
+           <!-- <div class="text">3rd image</div>-->
+        </div>
+		<!--Next and Previous buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+	<!--Dots/circles under the picture slide-->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+	<hr>
+	<br>
+	<div class="package-section">
+		<div class="section-topic">
+			<h2>Mostly Popular Event Packages</h2>
+		</div>
+		<div class = "packages">
+		
+		<div class="package-grid">
+            <div class="pack" id="p1">
+                <div class="pic-polygon">
+                    <div class="night-count">
+                        <p class="count">_</p>
+                        <p class="days">Days</p>
+                    </div>
+                </div>
+                <div class="price">price Per Person</div>
+                <div class="trip-det">
+                    <p class="l1">Event 1</p>
+                    <p class="l2">location</p>
+                    <p class="l3">Hotel Vibration Colombo</p>
+                </div>
+            </div>
+
+            <div class="pack" id="p2">
+                <div class="pic-polygon">
+                    <div class="night-count">
+                        <p class="count">_</p>
+                        <p class="days">Days</p>
+                    </div>
+                </div>
+                <div class="price">price Per Person</div>
+                <div class="trip-det">
+                    <p class="l1">Event 1</p>
+                    <p class="l2">location</p>
+                    <p class="l3">Hotel Vibration Colombo</p>
+                </div>
+            </div>
+
+            <div class="pack" id="p3">
+                <div class="pic-polygon">
+                    <div class="night-count">
+                        <p class="count">_</p>
+                        <p class="days">Days</p>
+                    </div>
+                </div>
+                <div class="price">price Per Person</div>
+                <div class="trip-det">
+                    <p class="l1">Event 1</p>
+                    <p class="l2">location</p>
+                    <p class="l3">Hotel Vibration Colombo</p>
+                </div>
+            </div>
+        </div>
+	</div>
+
+	<footer>
+
+        <div class="content">
+            <!-- Left column: Company logo and description -->
+            <div class="company-info">
+                <img src="images/logo.png" alt="Company Logo" class="company-logo">
+                <p>Welcome to Hotel Vibration! Experience luxury stays and unforgettable events with us.</p>
+            </div>
+            <!-- Center column: Quick links and social media -->
+           <div class="links-social">
+				<div class="quick-links">
+					<h4>Quick links</h4>
+					<p><a href="#">Home</a></p>
+					<p><a href="#">Events</a></p>
+					<p><a href="#">About</a></p>
+					<p><a href="#">Contact</a></p>
+				</div>
+				<div class="social-media">
+					<h4>Follow Us On</h4>
+					<a href = "https://www.facebook.com/"><img src = "images/fb.png"></a>
+					<a href = "https://web.whatsapp.com/"><img src = "images/wp.png"></a>
+					<a href = "https://www.instagram.com/"><img src = "images/ins.png"></a>
+					<a href = "https://x.com/"><img src = "images/tx.png"></a>
+					<a href = "https://www.youtube.com/"><img src = "images/yt.png"></a>
+				</div>
+			</div>
+            <!-- Right column: Subscribe section -->
+            <div class="subscribe-section">
+                <h4>Get the latest news </h4>
+                <form id="subscribeForm">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+			 
+        </div>
+				<div class="footer-links">
+                <a href="#">Terms and Conditions</a> |
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Cookies Policy</a>
+                </div>
+		<hr>
+
+		<center>
+           Copyright © 2024 Hotel Vibration. All rights reserved.<br>
+		   Made by MLB_WD_07.01_11 Group Members.
+		</center>
+				
+    </footer>
+	<script src = "js/homepagejs.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+	  font-size:20px;
+	  display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes sure the body takes up the full viewport height */
+    background-image: url('../images/bmg.jpg');
+    background-size: cover;
+}
+/* Page body*/
+
+* {box-sizing: border-box;}
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+p{
+	margin:5%;
+}
+
+.section-topic h2{
+	color:#000000;
+	text-align:center;
+}
+
+  .package-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+    /* margin: auto; */
+  }
+
+  .pack{
+    height: 450px;
+    width: 320px;
+    padding: 5px;
+    background-color: whitesmoke;
+    margin: 20px 20px 10px 0;
+    box-shadow: 5px 5px 9px rgba(0,0,0,0.8);
+    overflow: hidden;
+  }
+
+  /*polygon effect on package containers*/
+  .pack .pic-polygon{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+	clip-path: polygon(0 0, 100% 0%, 100% 51%, 0 90%); 
+    transition: .5s all ease-in-out;
+  }
+
+  .pack .pic-polygon::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(12, 12, 12);
+    opacity: .8;
+    clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%); 
+    transition: 1s all ease;
+    transform: translateX(-100%);
+    z-index: 3;
+  }
+  /* clip-path: polygon(0 0, 100% 0%, 100% 74%, 0 96%);*/
+
+  .pack:hover .pic-polygon::before{
+    transform: translateX(0);
+  }
+
+  .pack:hover .pic-polygon{
+    cursor: pointer;
+  }
+  
+  .pack .price{
+    left: 150px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: -50px;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+
+  .pack .trip-det .l1{
+    position: relative;
+    top: -40px;
+    font-size: 18px;
+    color: #353834;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .pack .trip-det .l2{
+    position: relative;
+    color: #218c74;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    top: -30px;
+  }
+
+  .pack .trip-det .l3{
+    position: relative;
+    top: -20px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  #p1 > .pic-polygon{
+    background-image: url("../images/pac1.jpg");
+    background-size: cover;
+  }
+
+  #p2 > .pic-polygon{
+    background-image: url("../images/pac2.jpg");
+    background-size: cover;
+  }
+
+  #p3 > .pic-polygon{
+    background-image: url("../images/pac3.jpg");
+    background-size: cover;
+  }
+  
+
+
+  

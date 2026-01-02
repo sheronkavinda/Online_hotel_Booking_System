@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--add a title (a) -->
+    <title>My Shopping Card</title>
+    <link rel="stylesheet" href="styles/styles.css" />   
+    <script src="js/myScript.js"></script>	
+  </head>
+
+  <body>
+    <!--add a logo (b)-->
+    <img
+      class="logo"
+      src="images/logo.jpg"
+      alt="LOGO"
+      width="200"
+      height="200"
+      class="logo"
+    />
+
+    <center>
+      <!--add a header(c) -->
+      <h1>Shopping Cart</h1>
+
+      <!--add a sub-header (c) -->
+      <h2>The online shopping store</h2>
+    </center>
+
+    <!--add a horizontal line (d)-->
+    <hr class="hr1" />
+    <br />
+    <!--add a horizontal menu (e)-->
+    <ul class="menu">
+      <li class="menu"><a href="#">Home</a></li>
+      <li class="menu"><a href="news.html"> News</a></li>
+      <li class="menu"><a href="register.html"> Contact</a></li>
+      <li class="menu"><a href="about.html"> About</a></li>
+    </ul>
+    <!--add a table (f)-->
+
+    <Center> <h2> Registration form<h2></center>
+	<form onsubmit="return checkpassword()">
+	First name : <br>
+	<input type="text" name= "firstname" value = "First name" required > <br>
+	Last name  : <br>
+	<input type="text" name= "Lastname" value = "Last name" required > <br>
+	Gender     : <br>
+	<input type ="radio" name= "gender" checked> Male
+	<input type ="radio" name= "gender" checked> Femal <br>
+	Mobile     : <br>
+	<input type="Phone" name= "Mobile" pattern="[0-9]{10}" placeholder="0987654321" required > <br>
+	E-mail : <br>
+	 <input type="email" id="myEmail" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+	Addres : <br>
+	<textarea rows ="5" cols="50" name="address"></textarea><br>
+	DOB :<br>
+	<input type="date"name ="dob"> 
+	<select>
+	<option value= "1">1</option>
+	<option value= "2">1</option>
+	</select>
+	
+	<select>
+	<option value= "Jan">Jan</option>
+	<option value= "Feb">Feb</option>
+	</select>
+	
+	<select>
+	<option value= "1995">1995</option>
+	<option value= "1996">1996</option>
+	</select> <br>
+	
+	password :<br>
+	 <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+	Re-enter Password : <br>
+	<input type ="Password" id="repsw"name="repsw"><br>
+	<input type ="checkbox"> Accept privacy policy and terms.<br>
+	<br>
+	<input type ="submit" value ="Submit">
+	
+	
+	
+	
+	
+	</form>
+
+    <!--add a horizontal line (d)-->
+    <hr />
+
+    <!--add a footer (g)-->
+    <center>
+      <h3 style="font-weight: bold; font-style: italic">
+        Created by :KAVINDA J.A.S<br />
+        <a href="https://courseweb.sliit.lk/my/">Visit to our Course</a>
+      </h3>
+    </center>
+  </body>
+</html>

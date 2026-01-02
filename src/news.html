@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--add a title (a) -->
+    <title>My Shopping Card</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/news.css" />
+
+    <script src="js/myScript.js">
+      document.write(Date());
+    </script>
+  </head>
+
+  <body>
+    <!--add a logo (b)-->
+    <img
+      class="logo"
+      src="images/logo.jpg"
+      alt="LOGO"
+      width="200"
+      height="200"
+      class="logo"
+    />
+
+    <center>
+      <!--add a header(c) -->
+      <h1>Shopping Cart</h1>
+
+      <!--add a sub-header (c) -->
+      <h2>The online shopping store</h2>
+    </center>
+
+    <!--add a horizontal line (d)-->
+    <hr class="hr1" />
+    <br />
+    <!--add a horizontal menu (e)-->
+    <ul class="menu">
+      <li class="menu"><a href="index.html">Home</a></li>
+      <li class="menu"><a href="#"> News</a></li>
+      <li class="menu"><a href="register.html"> Contact</a></li>
+      <li class="menu"><a href="about.html"> About</a></li>
+    </ul>
+
+    <br /><br />
+
+    <!--add buttons (f)-->
+
+    <button name="btn1" onclick="loadData('btn1')">IPhone</button>
+    <button name="btn2" onclick="loadData('btn2')">Nokia</button>
+    <button name="btn3" onclick="loadData('btn3')">Samsung</button>
+    <button name="btn5" onclick="productForInLoop('btn5')">
+      Average price
+    </button>
+    <button name="btn6" onclick="priceHigher('btn6')">
+      Prices higher than 40000
+    </button>
+    <button name="btn7" onclick="priceLower('btn7')">
+      Prices lower than 80000
+    </button>
+
+    <br /><br />
+    <center>
+      <img id="phoneImg" src="images/iphone.jpg" /><br />
+      <p id="para">
+        iPhone 15 Pro MAx is as durable as it is beautiful, and features an
+        aerospace-grade aluminum and glass design.
+      </p>
+    </center>
+
+    <!--add a horizontal line (d)-->
+    <hr />
+
+    <!--add a footer (g)-->
+    <center>
+      <h3 style="font-weight: bold; font-style: italic">
+        Created by : L E E E<br />
+        <a href="https://courseweb.sliit.lk/my/">Visit to our Course</a>
+      </h3>
+    </center>
+  </body>
+</html>

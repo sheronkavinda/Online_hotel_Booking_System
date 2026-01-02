@@ -1,0 +1,207 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/*header css */
+
+header {
+	font-size:20px;
+    background-color: #d3ca96;
+    padding: 0.5%;
+    border-top: 2px solid #673b09;
+    border-bottom: 2px solid #673b09;
+    background-image : url("../images/header_img.png");
+	background-repeat : no-repeat;
+	background-size : cover;
+    color: white;
+}
+
+.logo img {
+	height:60px;
+    width: 180px;
+    float: left;
+
+}
+
+#profile-info {
+    height: 70px;
+    width: fit-content;
+    float: right;
+    display: flex;
+    align-items: center;
+	margin-right:1%;
+}
+
+#profile-info a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+#profile-info img{
+	width:60px;
+	height:60px;
+    margin-right: 4px;
+    border-radius: 50%;
+	
+}
+
+#profile-info img:hover{
+    border: 2px solid #ad8b3a;
+}
+
+
+#loginBtn{
+    height: 45px;
+    width: 90px;
+	border-color:#ad8b3a;
+	background-color: #ad8b3a;
+	padding: 5px;
+	cursor:pointer;
+	border-radius:10px;
+	color:white;
+	font-size:14px;
+	margin-left:30px;
+}
+
+#loginBtn a{
+    text-decoration: none;
+    color: white;
+}
+
+#loginBtn:hover{
+	background-color: #444;
+	border-color:#444;
+	transition:0.5s;
+}
+
+
+nav{
+    height: 70px;
+    width: fit-content;
+	margin-left:5%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav a:hover{
+	color: #ad8b3a;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+	padding: 10px 20px;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ad8b3a;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdfdfd; /* Slightly off-white for better contrast */
+    border: 3px solid #d4af37; /* Gold border around main content */
+    border-radius: 10px; /* Rounded corners for elegance */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Policy Section Styling */
+.policy-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 2px solid #d4af37; /* Gold border around each section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fffaf0; /* Very light gold background for sections */
+}
+
+.policy-section h2 {
+    color: #d4af37; /* Gold color for main headings */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 10px;
+    font-size: 28px;
+    position: relative;
+}
+
+.policy-section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: #d4af37;
+    bottom: -3px;
+    left: 0;
+}
+
+.policy-section h3 {
+    color: #d4af37; /* Gold color for subheadings */
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    position: relative;
+}
+
+.policy-section h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #d4af37;
+    bottom: -3px;
+    left: 0;
+}
+
+.policy-section p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* List Styling */
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.policy-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Link Styling */
+.policy-section a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.policy-section a:hover {
+    color: #b0892c; /* Darker gold on hover */
+}
+
+

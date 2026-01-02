@@ -1,0 +1,73 @@
+/* Booking Form Section */
+.booking-form {
+    padding: 40px;
+    text-align: center;
+}
+
+.booking-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+.left-form, .right-form {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px; 
+    border: 3px solid #D4AF37; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+
+textarea {
+    height: 100px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #D4AF37; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.submit-btn:hover {
+    background-color: white; /* White background */
+    color: #D4AF37; /* Gold text on hover */
+    border: 2px solid #D4AF37; /* Gold border on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .booking-container {
+        flex-direction: column; /* Stack the form sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .left-form, .right-form {
+        width: 100%; /* Full width for mobile devices */
+        margin-bottom: 10px; /* Add spacing between the two sections */
+        padding: 20px; 
+    }
+}

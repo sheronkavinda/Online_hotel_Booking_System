@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    background-color: #F5F5DC;
+    display: flex;
+    flex-direction: column;
+    min-height: 1080px; /* Assuming a 1080px screen height */
+}
+
+/* Main container that holds all forms, using flexbox to align them horizontally */
+.user-profile {
+    display: flex;
+    justify-content: space-between; /* Ensures space between the forms */
+    width: 100%; /* Ensures it takes the full width of the container */
+    padding: 5%; 
+}
+
+/* Each individual form container will take up a percentage of the available space */
+.user_center, .acc_center, .pw_center {
+    width: 30%; 
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    margin: 0 10px; /* Adds space between the forms */
+}
+
+/* Consistent styling for headings */
+.user_center h1, .acc_center h1, .pw_center h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+/* Consistent textfield styles */
+.txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 20px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+/* Form button styles */
+button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px; /* Adds space between buttons */
+}
+
+.link {
+    text-decoration: none;
+}
+
+button:hover {
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: 0.5s;
+}
+
+/* User-specific styles */
+.user-image {
+    width: 100%; 
+    margin-bottom: 5%; 
+    margin-left: 15%;
+}
+
+/* Button styles for the user profile */
+.user_btn {
+    width: 100%;
+    margin-bottom: 15%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.user_btn:hover {
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: 0.5s;
+}
+
+.user_btn2:hover {
+    background: red;
+    color: #e9f4fb;
+    transition: 0.5s;
+}
+
+.update_btn, .save_btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.update_btn:hover, .save_btn:hover {
+    background: #2691d9;
+    color: #e9f4fb;
+    transition: 0.5s;
+}
